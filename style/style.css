@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.tarjeta {
+  -webkit-animation: aparecer 0.8s ease-in-out;
+          animation: aparecer 0.8s ease-in-out;
+}
+
+@-webkit-keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Roboto";
+  font-style: normal;
+  /*header*/
+  /*main*/
+  /*footer*/
+}
+body header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+body header .desc {
+  background-color: #1cd1b0;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 0px 8px 15px;
+}
+body header .hero {
+  background-color: #00669F;
+  box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 15px 15px 15px 10px;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 60px 0px;
+}
+body main .tarjeta {
+  background-color: #F3F3F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  /*margin: 20px 0px;*/
+  position: relative;
+  width: 280px;
+}
+body main .tarjeta .imagenes {
+  /*margin: 40px 0px;*/
+  width: 100%;
+}
+body main .tarjeta .imagenes .uno {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+body main .tarjeta .imagenes .dos {
+  width: 100%;
+}
+body main .tarjeta .imagenes .dos .fondo {
+  width: 100%;
+}
+body main .tarjeta .imagenes .tres {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 75px;
+  top: 115px;
+}
+body main .tarjeta .imagenes .tres .personaje {
+  border-radius: 50%;
+}
+body main .tarjeta .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 65px;
+}
+body main .tarjeta .texto .titulo {
+  color: #000000;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+}
+body main .tarjeta .texto .parrafo {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 9px;
+}
+body main .tarjeta .texto button {
+  background-color: #00669F;
+  border: none;
+  color: #F3F3F3;
+  font-size: 13px;
+  font-weight: 400;
+  margin: 25px 0px;
+  transition: background-color 0.8s;
+  padding: 10px 30px;
+}
+body main .tarjeta .texto button:hover {
+  background-color: #1cd1b0;
+}
+body footer {
+  background-color: #00669F;
+  color: #FFF9F9;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+@media (min-width: 860px) {
+  body header .desc {
+    font-size: 15px;
+  }
+  body header .hero {
+    font-size: 40px;
+  }
+  body main {
+    flex-direction: row;
+  }
+}/*# sourceMappingURL=style.css.map */
